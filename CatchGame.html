@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Game Time</title>
+    <link href="images/game_pad.ico" rel="icon" type="image/x-icon" />
+    <link href="CatchGame.css" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+   <br>
+      <div id="content">
+        <div id="instruction">
+          <img src="images/keyboardInstruction.png" />
+          <div id="buttonDiv">
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              onclick="resetScore()"
+            >
+              Reset Score
+            </button>
+            <br />
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              onclick="resetSpeedInterval()"
+            >
+              Reset Speed
+            </button>
+          </div>
+        </div>
+        <div id="game">
+          <canvas id="canvas" style="border: 1px solid #000000"></canvas>
+        </div>
+      </div>
+      <div id="footer">
+      
+      </div>
+    </div>
+    <script src="CatchGame.js"></script>
+  </body>
+</html>
